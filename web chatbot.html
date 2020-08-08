@@ -1,0 +1,65 @@
+
+<html>
+
+<body>
+
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2{background-color: #f44336;} /* Red */ 
+
+</style>
+<div style = "position:fixed; left:700px; top:20px; ">
+         
+		<button class="button">Forwards</button>
+</div>
+
+<div style = "position:fixed; left:699px; top:250px; ">
+      
+		 <button class="button">Backwards</button>
+</div>
+
+
+<div style = "position:fixed; left:500px; top:125px; ">
+       <button class="button">Left</button>
+</div>
+
+<div style = "position:fixed; left:900px; top:125px; ">
+      
+		<button class="button">Right</button>
+</div>
+
+
+
+<div style = "position:fixed; left:712px; top:125px; ">
+        <button class="button button2">Stop</button>
+</div>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "c6576a2d-d23b-41aa-87b9-74caf84d76d2", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "0e8773e4-4130-46ba-b42f-c9cc22b66b7c", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+</body>
+
+</html>
